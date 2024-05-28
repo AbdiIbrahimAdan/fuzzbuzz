@@ -1,21 +1,22 @@
 
-function  divisibilityTest(i) {
-    if(i % 5 === 0 && i % 3 === 0){
-      return `${i} fuzzbuzz`
+
+
+function  divisibilityTest(j) {
+    if(j % 5 === 0 && j % 3 === 0){
+      return `${j} fuzzbuzz`
     }
-    else if(i % 5 === 0){
-      return `${i} buzz`
+    else if(j % 5 === 0){
+      return `${j} buzz`
     }
-    else if(i % 3 === 0){
-      return `${i} fuzz`
+    else if(j % 3 === 0){
+      return `${j} fuzz`
     }
     else{
-      return `${i}`
+      return `${j}`
     }
   }
-
-  for(let num=1;num<=100;num++){
-   console.log(divisibilityTest(num));
-  }
+  for(let index = 1; index <= 100; index++){
+    console.log(divisibilityTest(index));
+   }
 
 module.exports = {divisibilityTest}
